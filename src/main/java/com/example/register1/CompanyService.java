@@ -44,7 +44,7 @@ public class CompanyService {
             .map(directorName -> {
                 Director director = new Director();
                 director.setName(directorName);
-               // director.setCompany(company);
+                director.setCompany(company);
                 return director;
             })
             .collect(Collectors.toList());
